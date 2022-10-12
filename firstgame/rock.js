@@ -2,12 +2,13 @@
 //prompt
 //the function has to output either rock or paper or scissors. Based on what?
 
-var items = ["rock", "paper", "scissors"];
+/*var items = ["rock", "paper", "scissors"];
 function random_item(items)
 {
   
 return items[Math.floor(Math.random()*items.length)];   
-}
+}*/
+
 
 function rockPaperScissors (player1, player2){
    if (player1 ==="scissors" && player2 === "paper" ) { 
