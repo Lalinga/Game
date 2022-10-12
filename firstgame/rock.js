@@ -45,3 +45,52 @@ function rockPaperScissors (player1, player2){
    }
  }
  console.log(rockPaperScissors("rock", "paper"))
+
+ let items =  ["rock", "paper", "scissors"];
+ let random = items [Math.floor(Math.random() * items.length)]
+console.log(random)
+ 
+function playerRound (playerSelection, computerSelection){
+  if (playerSelection ==="scissors" && computerSelection === "paper" ) { 
+    return "You win!!";
+  }
+else if (playerSelection ==="paper" && computerSelection === "scissors" ) { 
+    return "You lose!!";
+  }
+  else if (playerSelection ==="paper" && computerSelection === "rock"){
+    return "You win!!";
+  }
+  else if (playerSelection ==="rock" && computerSelection === "paper" ) { 
+    return "You lose!!";
+  }
+  else if (playerSelection ==="rock" && computerSelection === "scissors") {
+    return "you win!!"
+  }
+  else if (playerSelection ==="scissors" && computerSelection === "rock" ) { 
+    return "You lose!!";
+  }
+  else if (playerSelection ==="rock" && computerSelection === "rock"){
+    return "Draw!!";
+  }
+   else if (playerSelection ==="scissors" && computerSelection === "scissors"){
+    return "Draw!!";
+  }
+   else if (playerSelection ==="paper" && computerSelection === "paper"){
+    return "Draw!!";
+  }
+  else {
+    return "Play again!!";
+  }
+}
+let playerSelection = "paper";
+const computerSelection = random;
+console.log(playerRound(playerSelection, computerSelection))
+
+function game(){
+ 
+  for(let i = 5; i > playerRound; i++){
+    return i;
+  }
+}
+console.log(playerRound)
+
