@@ -52,7 +52,7 @@ console.log(random)
  
 function playerRound (playerSelection, computerSelection){
   if (playerSelection ==="scissors" && computerSelection === "paper" ) { 
-    return "You win!!";
+    return "You w
   }
 else if (playerSelection ==="paper" && computerSelection === "scissors" ) { 
     return "You lose!!";
